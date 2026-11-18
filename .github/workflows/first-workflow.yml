@@ -1,10 +1,15 @@
 name: first-workflow
 on: workflow_dispatch
 jobs:
- first-job:
-  runs-on: ubuntu-slim
-  steps:
-    - name: hello
-      run: echo "Hello world"
-    - name: bye
-      run: echo "bye bye"
+  my-firstjob:
+   runs-on: ubuntu-slim
+   steps:
+     - name: hello
+       run: echo "hi"
+     - name: bye
+       run: echo "bye"
+  my-secondjob:
+   runs-on: ubuntu-slim
+   steps:
+     - name: second job
+       run: echo "second"
